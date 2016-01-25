@@ -46,4 +46,8 @@
 #### MIT LICENSE
 
 
+####init my project
+    *简单的观察者模式的实现
+    *简单的事件监听模式的实现
+
 
