@@ -1,7 +1,5 @@
 package com.haocai.core.user;
 
-import org.springframework.stereotype.Service;
-
 /**
  * Created by Michael Jiang on 16/1/12.
  */

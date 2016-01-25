@@ -1,16 +1,16 @@
 package com.haocai.core.event;
 
+import java.util.concurrent.Executors;
+
 import com.google.common.eventbus.AsyncEventBus;
 import com.google.common.eventbus.EventBus;
-
-import java.util.concurrent.Executors;
 
 
 /**
  * Guava事件发布器实现
  * Created by Michael Jiang on 16/1/12.
  */
-public abstract class GuavaDomainEventPublisher implements DomainEventPublisher {
+public abstract class GuavaDomainEventPublisher implements DomainEventPublisher<DomainEvent> {
     private EventBus syncBus = new EventBus(identify());
     private EventBus asyncBus = new AsyncEventBus(identify(), Executors.newFixedThreadPool(1));
 
